@@ -10,15 +10,13 @@ function App() {
   return (
     <div>
       <Header />
-      {notes.map((noteItem) => {
-        return (
-          <Note
-            key={noteItem.key}
-            title={noteItem.title}
-            content={noteItem.content}
-          />
-        );
-      })}
+      {notes.map((noteItem) => (
+        <Note
+          key={noteItem.key}
+          title={noteItem.title}
+          content={noteItem.content}
+        />
+      ))}
       {/* <Note title={title} content={content} /> */}
       <Footer />
     </div>
